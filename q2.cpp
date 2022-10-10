@@ -26,11 +26,14 @@ void getInput(int &n1, int &n2, int &n3){
 }
 
 int  findMin(int n1, int n2, int n3){
-	int miN;
-	miN = n1;
+	int miN, N[3] = {n1, n2, n3};
+	miN = N[0];
 	for (int i = 0; i < 3; i++){
-		if 
+		if(N[i] < miN){
+			miN = N[i];
+		}
 	}
+	return miN;
 }
 
 
